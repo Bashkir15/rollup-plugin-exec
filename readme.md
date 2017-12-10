@@ -1,4 +1,4 @@
-# Rollup Execute
+# Rollup Exec
 
 > A simple way to make executable binaries for node with Rollup
 
@@ -9,7 +9,7 @@ Simply include the plugin in your normal list of rollup plugins.
 ```js
 
 import { rollup } from 'rollup';
-import execute from 'rollup-plugin-execute';
+import execute from 'rollup-plugin-exec';
 
 function build() {
     return rollup({

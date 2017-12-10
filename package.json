@@ -1,6 +1,17 @@
 {
-  "name": "rollup-plugin-executable",
+  "name": "rollup-plugin-exec",
   "version": "0.1.0",
+  "main": "src/index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "fs": "0.0.1-security"
   },
